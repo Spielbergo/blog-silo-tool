@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex,nofollow">
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <title>Two Inputs - Blog Silo Link Generator</title>    
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=open-sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i|open-sans-condensed:300,700|oswald:200,300,400,500,600,700" rel="stylesheet" />
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+    <!-- Navigation -->
+    <nav class="navbar--container">
+        <ul class="navbar">
+            <li class="active"><a href="homepage.html">Homepage</a></li>
+            <li><a href="index.html">Area Pages</a></li>            
+            <li><a href="com-page.html">COM pages</a></li>
+            <li><a href="house-worth.html">House Worth</a></li>
+            <li><a href="web2.html">Web 2.0s</a></li>
+        </ul>
+    </nav>
+
+    <div class="titles--container">
+        <h1 class="main-title">Blog Silo Link Generator</h1>
+        <h2 class="sub-title">Two Inputs</h2>
+    </div>
+
+    <div class="app--container">
+        <!-- Inputs Container -->
+        <div class="inputs--container shadow">
+            <!-- Domain Name -->
+            <label class="label-margin" for="domainName">Domain Name:</label>
+            <select id="domainName" placeholder="Enter domain name">
+                <option value="www.jenjewell.ca">Jen Jewell</option>
+                <option value="bluekitchenrefacing.com">Blue</option>
+                <option value="spelbergo.com">Spelbergo</option>
+                <option value="yopie.ca">Yopie</option>
+            </select>
+            
+            <!-- Categories -->
+            <label class="label-margin" for="townName">Town Name:</label>
+            <input type="text" id="townName" placeholder="Enter town name">
+
+            <!-- URL Last Word -->
+            <label class="label-margin" for="townName">URL Last Word:</label>
+            <input type="text" id="lastWord" placeholder="Enter last word in URL">
+
+            <!-- Text Box -->
+            <label class="label-margin" for="userKeywords">Keywords (one per line):</label>            
+            <textarea id="userKeywords" placeholder="Enter keywords one per line" rows="10" cols="40"></textarea>
+
+            <br>
+            <!-- Generate Button -->
+            <button onclick="generateLinks()">Generate Links</button>
+        </div>
+    </div>
+
+    <!-- Display Links -->
+    <div id="linksContainer" class="links--container shadow"></div>
+
+    <!-- Copy to Clipboard Confirm -->
+    <div id="copyConfirm" class="copy-confirm"></div>
+
+    <!-- Results Confirm -->
+    <div id="resultsConfirm" class="results-confirm">&#8681;</div>
+
+    <!-- JS -->
+    <script src="assets/js/twoInputs.js"></script>
+</main>
+</body>
+</html>

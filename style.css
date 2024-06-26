@@ -1,0 +1,368 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+    transition: 5s ease-in-out;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2 {
+    margin: 0;
+}
+
+h3 {
+    margin-bottom: 0;
+}
+
+h4 {
+    width: 500px;
+}
+
+h4 span {
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:visited {
+    color: lightgrey;
+}
+
+select,
+input,
+textarea {
+    padding: 10px;
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: .8px;
+    font-size: 16px;
+    font-weight: 400;
+    /* box-shadow:
+        0 1px 1px hsl(0deg 0% 0% / 0.075),
+        0 2px 2px hsl(0deg 0% 0% / 0.075),
+        0 4px 4px hsl(0deg 0% 0% / 0.075),
+        0 8px 8px hsl(0deg 0% 0% / 0.075),
+        0 16px 16px hsl(0deg 0% 0% / 0.075); */
+    border: 1px dotted grey;
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.1); */
+    border-radius: 5px;
+}
+
+option:hover {
+    background-color: green;
+}
+
+button {
+    width: 150px;
+    padding: 10px 20px;
+    margin-left: 5px;
+    background-color: green;
+    color: white;
+    font-weight: 700;
+    font-size: .8rem;
+    border-color: green;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+button:hover {
+    filter: brightness(1.1);
+}
+
+.button-container {
+    width: 500px;
+    text-align: right;
+}
+
+.code-button {
+    border-color: blue;
+    background-color: blue;
+}
+
+.title-button {
+    border-color: purple;
+    background-color: purple;
+}
+
+.target-button {
+    border-color: red;
+    background-color: red;
+}
+
+button:active,
+button:focus {
+    background-color: grey;
+}
+
+.label-margin {
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+/* Scrollbar Style */
+::-webkit-scrollbar {
+    width: 15px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #333;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: green;
+}
+
+.shadow {
+    box-shadow:
+        0 1px 1px hsl(0deg 0% 0% / 0.075),
+        0 2px 2px hsl(0deg 0% 0% / 0.075),
+        0 4px 4px hsl(0deg 0% 0% / 0.075),
+        0 8px 8px hsl(0deg 0% 0% / 0.075),
+        0 16px 16px hsl(0deg 0% 0% / 0.075);
+}
+
+.navbar--container {    
+    position: sticky;
+    top: 20px;
+    left: 20px;
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    background-color: #fff;
+    padding: 15px 20px 30px;
+    border-bottom: 1px dotted lightgray;
+    border-radius: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+}
+
+.nav-shadow {
+    border: 1px dotted lightgray;
+    box-shadow:
+        0 1px 1px hsl(0deg 0% 0% / 0.075),
+        0 2px 2px hsl(0deg 0% 0% / 0.075),
+        0 4px 4px hsl(0deg 0% 0% / 0.075),
+        0 8px 8px hsl(0deg 0% 0% / 0.075),
+        0 16px 16px hsl(0deg 0% 0% / 0.075);
+    transition: .25s ease-in-out;
+    padding: 15px 20px;
+}
+
+.navbar li {
+    cursor: pointer;
+}
+
+.navbar li:hover,
+.active {
+    color: green !important;
+}
+
+.titles--container {
+    margin-top: 75px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.main-title,
+.sub-title {
+    text-shadow: 0px 0px 20px #0f6f09;
+}
+
+.titles--reminder {
+    color: red;
+}
+
+.app--container {
+    padding: 0 15px;
+}
+
+.app--container .generate-btn {
+    width: 100%;
+    text-align: center;
+}
+
+.inputs--container,
+.links--container {
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+    max-width: 1720px;
+    padding: 40px;
+    margin: auto;
+    border-radius: 15px; 
+    background: #f1f1f1;
+    border: 1px dotted lightgrey;   
+}
+
+.inputs--container {
+    max-width: 1740px;
+    margin-bottom: 50px;
+    padding-top: 25px;    
+}
+
+.inputs--container.house-worth {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 40px 25px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+#linksContainer {
+    margin-top: 75px;
+    margin-bottom: 150px;
+    transition: .5s ease-in-out;
+    opacity: 0;
+}
+
+.post-silo-container h3 {
+    text-transform: capitalize;
+}
+
+.post-url {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    width: 100%;
+    border-bottom: 1px dotted lightgray;
+}
+
+.post-url h3 {
+    width: 400px;
+    text-transform: capitalize;
+    margin-right: 20px;
+}
+
+.post-url p {
+    width: 490px;
+}
+
+.results-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid grey;
+}
+
+.silo-links{
+    /* border-top: 1px solid grey; */
+    border-bottom: 1px solid grey;
+    padding-bottom: 5px;
+}
+
+.silo-start {
+    border-bottom: 1px solid grey;
+}
+
+.silo-links,
+.silo-start,
+.silo-finish {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.silo-start,
+.silo-finish  {
+    margin-top: 10px;
+}
+
+.silo-start button {
+    margin-bottom: 20px;
+}   
+
+.copy-confirm {
+    display: none;
+    position: fixed;
+    top: 30%;
+    right: 50px;
+    font-size: 20px;
+    background-color: #fff;
+    border: 1px dotted grey;    
+    border-radius: 5px;
+    z-index: 1000;
+
+}
+
+/* .copy-confirm::before {
+    background-color: green;
+    padding: 0;
+    content: '\2713';
+} */
+
+.copied--check {
+    font-size: 20px;
+    color: #fff;
+    background-color: green;
+    padding: 15.25px 20px;
+    line-height: 58px;
+    border-radius: 5px 0 0 5px;
+}
+
+.copied--text {
+    padding: 10px 20px 10px 15px;
+    line-height: 58px;
+}
+
+.results-confirm {
+    position: absolute;
+    bottom: 50px;
+    right: 150px;
+    font-size: 50px;
+    color: red;
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+
+.url-status {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.green-check {
+    color: green;
+    font-weight: bold;
+}
+
+.yellow-dot {
+    color: orange;
+    font-weight: bold;
+}
+
+.red-x {
+    color: red;
+    font-weight: bold;
+}

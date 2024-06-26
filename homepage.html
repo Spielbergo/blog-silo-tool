@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex,nofollow">
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <title>Homepage - Blog Silo Link Generator</title>    
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=open-sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i|open-sans-condensed:300,700|oswald:200,300,400,500,600,700" rel="stylesheet" />
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+    <!-- Navigation -->
+    <nav class="navbar--container">
+        <ul class="navbar">
+            <li class="active"><a href="homepage.html">Homepage</a></li>
+            <li><a href="index.html">Area Pages</a></li>            
+            <li><a href="com-page.html">COM pages</a></li>
+            <li><a href="house-worth.html">House Worth</a></li>
+            <li><a href="web2.html">Web 2.0s</a></li>
+        </ul>
+    </nav>
+
+    <div class="titles--container">
+        <h1 class="main-title">Blog Silo Link Generator</h1>
+        <h2 class="sub-title">Homepage</h2>
+        <p class="titles--reminder">Check for Capital Letters and Spelling</p>
+    </div>
+
+    <div class="app--container">
+        <!-- Inputs Container -->
+        <div class="inputs--container house-worth shadow">
+            <div class="inputs">
+                <label class="label-margin" for="domainName">Domain Name:</label>
+                <select id="domainName" placeholder="Enter domain name">
+                    <option value="www.jenjewell.ca">Jen Jewell</option>
+                    <option value="stg-jenjewell-staging.kinsta.cloud">Jen Jewell - STAGING</option>
+                    <option value="bluekitchenrefacing.com">Blue</option>
+                    <option value="blushspa.ca">Blush</option>
+                    <option value="spelbergo.com">Spelbergo</option>
+                    <option value="yopie.ca">Yopie</option>
+                    <option value="webcheddar.ca">Web Cheddar</option>
+                    <option value="dev.ampelectricians.ca">Amp-Tech DEVSITE</option>
+                </select>              
+                <label class="label-margin" for="userKeywords">URLs (one per line):</label>
+                <textarea id="userKeywords" placeholder="Enter keywords one per line" rows="11" cols="40"></textarea>
+            </div>
+
+            <div class="inputs">
+                <label class="label-margin" for="townName">Category (include starting slash - blank if no category):</label>
+                <input type="text" id="townName" placeholder="Enter Category">
+    
+                <label class="label-margin" for="userKeywords">Silo Link Anchor Text (one per line):</label>
+                <textarea id="userAnchors" placeholder="Enter Anchor Text one per line" rows="11" cols="40"></textarea>
+            </div>
+
+            <div class="inputs">    
+                <label class="label-margin" for="userKeywords">Target Anchor Text (one per line):</label>
+                <textarea id="targetAnchors" placeholder="Enter Target Anchor Text one per line" rows="14" cols="40"></textarea>
+            </div>
+            <br>
+        </div>
+
+        <!-- <div class="generate-btn">
+            <button onclick="generateLinks()" style="width: 15%">Generate Links</button>
+        </div> -->
+        <div class="generate-btn">
+            <button onclick="generateLinks()" style="width: 15%">Generate Links</button>
+            <button onclick="copyAllUrls()" style="width: 15%">Copy All URLs</button>
+        </div>
+    </div>
+
+    <!-- Display Links -->
+    <div id="linksContainer" class="links--container shadow"></div>
+
+    <!-- Copy to Clipboard Confirm -->
+    <div id="copyConfirm" class="copy-confirm shadow"><span class="copied--check">&#10003;</span> <span class="copied--text">COPIED</span></div>
+
+    <!-- Results Confirm -->
+    <div id="resultsConfirm" class="results-confirm">&#8681;</div>
+
+    <!-- JS -->
+    <script src="assets/js/homepage.js"></script>
+</main>
+</body>
+</html>
